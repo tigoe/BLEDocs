@@ -20,5 +20,7 @@ The doc-a-thon will take place on June 9 and 10, 2014. Here are some of the goal
 * suggest how they might be implemented for other devices
 * come up with a set of "best practices" for Bluetooth LE APIs
 
+Check the Wiki for introductions to the various devices and libraries we've investigated, and the code repo for actual code samples.
+
 The participants (not complete):
 Tom Igoe, Don Coleman, Alasdair Allan, Sandeep Mistry, Kevin Townsend (remotely), Yihui Xiong (remotely), Shawn Van Every, JB Kim, Guan Yang, 
