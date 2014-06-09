@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00FAC0DE193FEE5F004BB1DC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FAC0DD193FEE5F004BB1DC /* Cocoa.framework */; };
+		00FAC0E8193FEE5F004BB1DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00FAC0E6193FEE5F004BB1DC /* InfoPlist.strings */; };
+		00FAC0EA193FEE5F004BB1DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FAC0E9193FEE5F004BB1DC /* main.m */; };
+		00FAC0EE193FEE5F004BB1DC /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 00FAC0EC193FEE5F004BB1DC /* Credits.rtf */; };
+		00FAC0F1193FEE5F004BB1DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FAC0F0193FEE5F004BB1DC /* AppDelegate.m */; };
+		00FAC0F4193FEE5F004BB1DC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00FAC0F2193FEE5F004BB1DC /* MainMenu.xib */; };
+		00FAC0F6193FEE5F004BB1DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00FAC0F5193FEE5F004BB1DC /* Images.xcassets */; };
+		00FAC112193FF09D004BB1DC /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FAC111193FF09D004BB1DC /* IOBluetooth.framework */; };
+		00FAC116193FF1D8004BB1DC /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FAC114193FF1D8004BB1DC /* BLE.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00FAC0DA193FEE5F004BB1DC /* Blink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00FAC0DD193FEE5F004BB1DC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		00FAC0E0193FEE5F004BB1DC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		00FAC0E1193FEE5F004BB1DC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		00FAC0E2193FEE5F004BB1DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		00FAC0E5193FEE5F004BB1DC /* Blink-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Blink-Info.plist"; sourceTree = "<group>"; };
+		00FAC0E7193FEE5F004BB1DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		00FAC0E9193FEE5F004BB1DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00FAC0EB193FEE5F004BB1DC /* Blink-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Blink-Prefix.pch"; sourceTree = "<group>"; };
+		00FAC0ED193FEE5F004BB1DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		00FAC0EF193FEE5F004BB1DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		00FAC0F0193FEE5F004BB1DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		00FAC0F3193FEE5F004BB1DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		00FAC0F5193FEE5F004BB1DC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		00FAC111193FF09D004BB1DC /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+		00FAC113193FF1D8004BB1DC /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
+		00FAC114193FF1D8004BB1DC /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
+		00FAC115193FF1D8004BB1DC /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00FAC0D7193FEE5F004BB1DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00FAC112193FF09D004BB1DC /* IOBluetooth.framework in Frameworks */,
+				00FAC0DE193FEE5F004BB1DC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00FAC0D1193FEE5F004BB1DC = {
+			isa = PBXGroup;
+			children = (
+				00FAC0E3193FEE5F004BB1DC /* Blink */,
+				00FAC0DC193FEE5F004BB1DC /* Frameworks */,
+				00FAC0DB193FEE5F004BB1DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00FAC0DB193FEE5F004BB1DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00FAC0DA193FEE5F004BB1DC /* Blink.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00FAC0DC193FEE5F004BB1DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00FAC111193FF09D004BB1DC /* IOBluetooth.framework */,
+				00FAC0DD193FEE5F004BB1DC /* Cocoa.framework */,
+				00FAC0DF193FEE5F004BB1DC /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		00FAC0DF193FEE5F004BB1DC /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00FAC0E0193FEE5F004BB1DC /* AppKit.framework */,
+				00FAC0E1193FEE5F004BB1DC /* CoreData.framework */,
+				00FAC0E2193FEE5F004BB1DC /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		00FAC0E3193FEE5F004BB1DC /* Blink */ = {
+			isa = PBXGroup;
+			children = (
+				00FAC113193FF1D8004BB1DC /* BLEDefines.h */,
+				00FAC114193FF1D8004BB1DC /* BLE.m */,
+				00FAC115193FF1D8004BB1DC /* BLE.h */,
+				00FAC0EF193FEE5F004BB1DC /* AppDelegate.h */,
+				00FAC0F0193FEE5F004BB1DC /* AppDelegate.m */,
+				00FAC0F2193FEE5F004BB1DC /* MainMenu.xib */,
+				00FAC0F5193FEE5F004BB1DC /* Images.xcassets */,
+				00FAC0E4193FEE5F004BB1DC /* Supporting Files */,
+			);
+			path = Blink;
+			sourceTree = "<group>";
+		};
+		00FAC0E4193FEE5F004BB1DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00FAC0E5193FEE5F004BB1DC /* Blink-Info.plist */,
+				00FAC0E6193FEE5F004BB1DC /* InfoPlist.strings */,
+				00FAC0E9193FEE5F004BB1DC /* main.m */,
+				00FAC0EB193FEE5F004BB1DC /* Blink-Prefix.pch */,
+				00FAC0EC193FEE5F004BB1DC /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00FAC0D9193FEE5F004BB1DC /* Blink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00FAC10B193FEE5F004BB1DC /* Build configuration list for PBXNativeTarget "Blink" */;
+			buildPhases = (
+				00FAC0D6193FEE5F004BB1DC /* Sources */,
+				00FAC0D7193FEE5F004BB1DC /* Frameworks */,
+				00FAC0D8193FEE5F004BB1DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Blink;
+			productName = Blink;
+			productReference = 00FAC0DA193FEE5F004BB1DC /* Blink.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00FAC0D2193FEE5F004BB1DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Babilim Light Industries";
+			};
+			buildConfigurationList = 00FAC0D5193FEE5F004BB1DC /* Build configuration list for PBXProject "Blink" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00FAC0D1193FEE5F004BB1DC;
+			productRefGroup = 00FAC0DB193FEE5F004BB1DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00FAC0D9193FEE5F004BB1DC /* Blink */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00FAC0D8193FEE5F004BB1DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00FAC0E8193FEE5F004BB1DC /* InfoPlist.strings in Resources */,
+				00FAC0F6193FEE5F004BB1DC /* Images.xcassets in Resources */,
+				00FAC0EE193FEE5F004BB1DC /* Credits.rtf in Resources */,
+				00FAC0F4193FEE5F004BB1DC /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00FAC0D6193FEE5F004BB1DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00FAC116193FF1D8004BB1DC /* BLE.m in Sources */,
+				00FAC0F1193FEE5F004BB1DC /* AppDelegate.m in Sources */,
+				00FAC0EA193FEE5F004BB1DC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		00FAC0E6193FEE5F004BB1DC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00FAC0E7193FEE5F004BB1DC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		00FAC0EC193FEE5F004BB1DC /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00FAC0ED193FEE5F004BB1DC /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		00FAC0F2193FEE5F004BB1DC /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00FAC0F3193FEE5F004BB1DC /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00FAC109193FEE5F004BB1DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		00FAC10A193FEE5F004BB1DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		00FAC10C193FEE5F004BB1DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Blink/Blink-Prefix.pch";
+				INFOPLIST_FILE = "Blink/Blink-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		00FAC10D193FEE5F004BB1DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Blink/Blink-Prefix.pch";
+				INFOPLIST_FILE = "Blink/Blink-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00FAC0D5193FEE5F004BB1DC /* Build configuration list for PBXProject "Blink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00FAC109193FEE5F004BB1DC /* Debug */,
+				00FAC10A193FEE5F004BB1DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00FAC10B193FEE5F004BB1DC /* Build configuration list for PBXNativeTarget "Blink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00FAC10C193FEE5F004BB1DC /* Debug */,
+				00FAC10D193FEE5F004BB1DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00FAC0D2193FEE5F004BB1DC /* Project object */;
+}
