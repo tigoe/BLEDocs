@@ -111,12 +111,15 @@ void loop() {
   val = digitalRead(4);      // read input value and store it in val
   if (val != buttonState) {          // the button state has changed!
     uint8_t foo = -1;
+    uint8_t bar = -1;
     Serial.print("credits available ");
     Serial.println( nrf->creditsAvailable() );
     
     if (val == LOW) {                // check if the button is pressed
       Serial.println("Button just released");
       digitalWrite( 3, LOW );
+      bar = 0;
+      nrf->setLocalData(LED_SWITCH_PIPE, 1, &bar);
       
       // STATE
       if (nrf->isPipeOpen(BUTTON_STATE_PIPE) && nrf->creditsAvailable()) {
@@ -136,6 +139,8 @@ void loop() {
     } else {                         // the button is -not- pressed...
       Serial.println("Button just pressed");
       digitalWrite( 3, HIGH );
+      bar = 1;
+      nrf->setLocalData(LED_SWITCH_PIPE, 1, &bar);
 
       // STATE
       if (nrf->isPipeOpen(BUTTON_STATE_PIPE) && nrf->creditsAvailable()) {
