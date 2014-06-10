@@ -34,8 +34,9 @@
 #ifndef SETUP_MESSAGES_H__
 #define SETUP_MESSAGES_H__
 
-#include "hal_platform.h"
-#include "aci.h"
+#include <stdint.h>
+#include <hal_platform.h>
+#include <aci.h>
 
 
 #define SETUP_ID 0

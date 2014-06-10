@@ -1,9 +1,7 @@
 // Set Serial Monitor to 115200
 // Currently this will output large amounts of debugging data
 
-// ----------------------------------------------------------------------
-// The services.h file MUST be symlinked to the nrf8001 library directory
-// ----------------------------------------------------------------------
+#include "services.h"
 
 #define NRF_DEBUG 1
 #include <SPI.h>
@@ -20,6 +18,7 @@
 #define REQN_PIN 10
 #define RDYN_PIN 2
 
+hal_aci_data_t setup_msgs[NB_SETUP_MESSAGES] = SETUP_MESSAGES_CONTENT;
 nRF8001 *nrf;
 
 int val;               
@@ -80,7 +79,7 @@ void setup() {
 
   // Register event handles
   nrf->setEventHandler(&eventHandler);
-  if ((nrf->setup()) == cmdSuccess) {
+  if ((nrf->setup( setup_msgs, NB_SETUP_MESSAGES)) == cmdSuccess) {
     Serial.println("SUCCESS");
   } else {
     Serial.println("FAIL");
