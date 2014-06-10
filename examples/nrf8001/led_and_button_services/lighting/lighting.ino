@@ -1,6 +1,10 @@
 // Set Serial Monitor to 115200
 // Currently this will output large amounts of debugging data
 
+// ----------------------------------------------------------------------
+// The services.h file MUST be symlinked to the nrf8001 library directory
+// ----------------------------------------------------------------------
+
 #define NRF_DEBUG 1
 #include <SPI.h>
 #include <nRF8001.h>
