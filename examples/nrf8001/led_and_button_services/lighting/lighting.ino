@@ -116,6 +116,7 @@ void loop() {
     
     if (val == LOW) {                // check if the button is pressed
       Serial.println("Button just released");
+      digitalWrite( 3, LOW );
       
       // STATE
       if (nrf->isPipeOpen(BUTTON_STATE_PIPE) && nrf->creditsAvailable()) {
@@ -134,7 +135,8 @@ void loop() {
       
     } else {                         // the button is -not- pressed...
       Serial.println("Button just pressed");
-      
+      digitalWrite( 3, HIGH );
+
       // STATE
       if (nrf->isPipeOpen(BUTTON_STATE_PIPE) && nrf->creditsAvailable()) {
          Serial.println("Setting 1");
