@@ -127,9 +127,6 @@ void loop() {
     
     if (val == LOW) {                // check if the button is pressed
       Serial.println("Button just released");
-      //digitalWrite( 3, LOW );
-      //bar = 0;
-      //nrf->setLocalData(LED_SWITCH_PIPE, 1, &bar);
       
       // STATE
       if (nrf->isPipeOpen(BUTTON_STATE_PIPE) && nrf->creditsAvailable()) {
