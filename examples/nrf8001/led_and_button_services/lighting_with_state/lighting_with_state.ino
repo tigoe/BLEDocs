@@ -54,9 +54,13 @@ void eventHandler(nRFEvent *event)
      }
      Serial.println("");
      if ( event->msg.dataReceived.data[0] > 0 ) {
+       // Turn the LED on
        digitalWrite( 3, HIGH );
+       ledState = 1;
      } else {
+       // or off
        digitalWrite( 3, LOW );
+       ledState = 0;
      }
   }
   
